@@ -37,7 +37,7 @@ flags = [
     '-std=c11',
     '-Wall',
     '-Wextra',
-    '-Wpedantic',
+    #'-Wpedantic',
     '-Wuninitialized',
     '-Wundef',
     '-Wcast-align',
