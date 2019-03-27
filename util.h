@@ -8,6 +8,17 @@
 #define ROTR(a, b) (((a) >> (b)) | ((a) << (sizeof(a) * CHAR_BIT - (b))))
 
 typedef union {
+    uint16_t word;
+    uint8_t byte[2];
+} DATA_16;
+
+typedef union {
+    uint32_t dword;
+    uint16_t word[2];
+    uint8_t byte[4];
+} DATA_32;
+
+typedef union {
     uint64_t qword;
     uint32_t dword[2];
     uint16_t word[4];

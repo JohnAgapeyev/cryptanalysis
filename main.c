@@ -4,6 +4,7 @@
 #include <stdint.h>
 
 #include "util.h"
+#include "feal.h"
 
 int main(int argc, char **argv) {
     uint8_t x = 0xab;
@@ -32,6 +33,8 @@ int main(int argc, char **argv) {
     uint64_t i = ROTR(h, 3);
 
     printf("Input %lu, Output %lu, Again %lu\n", g, h, i);
+
+    test_feal();
 
     return EXIT_SUCCESS;
 }
